@@ -10,7 +10,7 @@ void main() {
 class _MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    //awesome
+    
     return _MyAppState();
   }
 }
@@ -27,6 +27,14 @@ class _MyAppState extends State<_MyApp> {
       ]
     },
     {
+      'questionText': 'What\'s your favorite Animal?',
+      'answers': [
+        {'text': 'Elephant', 'score': 3},
+        {'text': 'Rabbit', 'score': 2},
+        {'text': 'Lion', 'score': 2},
+        {'text': 'Snake', 'score': 1}
+      ]
+    },{
       'questionText': 'What\'s your favorite Animal?',
       'answers': [
         {'text': 'Elephant', 'score': 3},
