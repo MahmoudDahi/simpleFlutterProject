@@ -5,12 +5,14 @@ class Result extends StatelessWidget {
   final int scoreResult;
   final Function restartHandle;
 
-  Result({this.scoreResult, this.restartHandle});
+  const Result({Key key, this.scoreResult, this.restartHandle})
+      : super(key: key);
 
   String get resultPhrase {
     if (scoreResult < 2) return 'You are so bad';
     if (scoreResult < 4) return 'You are so excited';
     if (scoreResult >= 4) return 'You Are Awesome';
+    return "";
   }
 
   @override
